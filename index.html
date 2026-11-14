@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HEART TRIGGER 공식 사이트</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== 상단 메뉴 ========== -->
+  <header class="nav">
+    <a href="#hero" class="nav-logo"><img src="images/logo.png" alt="HEART TRIGGER"></a>
+    <nav class="nav-menu">
+      <a href="#hero">홈</a>
+      <a href="#news">소식</a>
+      <a href="#characters">캐릭터</a>
+      <a href="#world">세계관</a>
+    </nav>
+    <a href="#hero" class="nav-btn">사전예약</a>
+  </header>
+
+  <!-- ========== 오른쪽 섹션 위치 표시 점 ========== -->
+  <nav class="dots-nav" aria-label="섹션 이동">
+    <a href="#hero" class="is-active" aria-label="홈"></a>
+    <a href="#news" aria-label="소식"></a>
+    <a href="#characters" aria-label="캐릭터"></a>
+    <a href="#world" aria-label="세계관"></a>
+  </nav>
+
+  <!-- ========== 1. 메인 ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <img class="hero-logo" src="images/logo.png" alt="HEART TRIGGER 로고">
+      <p class="hero-catch">[캐치프레이즈]</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn">[버튼 1]</a>
+        <a href="#" class="btn btn-line">[버튼 2]</a>
+      </div>
+    </div>
+    <div class="stripe stripe-bottom"></div>
+  </section>
+
+  <!-- ========== 2. 소식 ========== -->
+  <section class="news" id="news">
+    <h2 class="title">소식</h2>
+    <div class="news-wrap">
+      <!-- 왼쪽: 큰 배너 (배너 이미지를 넣을 자리) -->
+      <div class="news-banner">
+        <span class="sticker">[라벨]</span>
+        <p>[배너 이미지 자리]</p>
+      </div>
+      <!-- 오른쪽: 탭 + 목록 -->
+      <div class="news-list">
+        <div class="tabs">
+          <button class="tab is-active">최신</button>
+          <button class="tab">공지</button>
+          <button class="tab">이벤트</button>
+        </div>
+        <ul>
+          <li><span>[분류]</span> [소식 제목] <em>[날짜]</em></li>
+          <li><span>[분류]</span> [소식 제목] <em>[날짜]</em></li>
+          <li><span>[분류]</span> [소식 제목] <em>[날짜]</em></li>
+          <li><span>[분류]</span> [소식 제목] <em>[날짜]</em></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3. 캐릭터 ========== -->
+  <section class="characters" id="characters">
+    <h2 class="title">캐릭터</h2>
+    <div class="char-wrap">
+      <!-- 왼쪽: 캐릭터 선택 버튼 (data-char 번호로 연결) -->
+      <div class="char-list">
+        <button class="char-btn is-active" data-char="0">[캐릭터 1]</button>
+        <button class="char-btn" data-char="1">[캐릭터 2]</button>
+        <button class="char-btn" data-char="2">[캐릭터 3]</button>
+      </div>
+      <!-- 가운데: 캐릭터 그림 -->
+      <div class="char-art"><p>[캐릭터 일러스트 자리]</p></div>
+      <!-- 오른쪽: 캐릭터 정보 -->
+      <div class="char-info">
+        <h3 class="char-name">[이름]</h3>
+        <p class="char-desc">[소개]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. 세계관 ========== -->
+  <section class="world" id="world">
+    <h2 class="title">세계관</h2>
+    <p>평범한 일상을 살던 도시에 감정을 먹는 괴물 '노이즈'가 나타나고, 사람들 안에 잠들어 있던 힘 '공명'이 깨어나기 시작한다.</p>
+    <div class="world-cards">
+<div class="world-card"><h3>노이즈</h3><p>인간의 감정을 먹고 사는 괴물. 사랑, 분노, 슬픔 같은 강한 감정에 반응하며, 먹힌 사람은 감정과 기억을 잃다가 끝내 노이즈가 된다.</p></div>
+<div class="world-card"><h3>공명</h3><p>강한 감정과 사람 사이의 유대가 깨운 힘. 사람마다 다른 능력으로 나타나고, 발현될 때 몸에 '공명문'이 새겨진다.</p></div>
+<div class="world-card"><h3>링크</h3><p>타인의 감정과 공명의 흐름을 읽는 주인공만의 공명. 히로인들과의 유대를 이어 주는 열쇠다.</p></div>
+    </div>
+  </section>
+  <!-- ========== 5. 사전예약 ========== -->
+<section class="prereg" id="prereg">
+  <h2 class="title">사전예약</h2>
+  <p class="prereg-date">출시 예정일 <strong>[출시일]</strong></p>
+
+  <div class="rewards">
+    <div class="reward reward-main">
+      <span class="sticker">추첨</span>
+      <h3>사전예약 경품 추첨</h3>
+      <p>참여자 중 추첨을 통해 아이패드 등 경품 증정</p>
+    </div>
+    <div class="reward"><h3>히로인 한정 코스튬</h3><p>사전예약자 전원 지급</p></div>
+    <div class="reward"><h3>성장 재화</h3><p>빠른 출발을 위한 육성 재화</p></div>
+    <div class="reward"><h3>호감도 선물 아이템</h3><p>첫 공략을 도와줄 선물 세트</p></div>
+  </div>
+
+  <form class="prereg-form" id="preregForm">
+    <input type="email" id="email" placeholder="이메일 주소" required>
+    <label><input type="checkbox" id="agree"> 개인정보 수집에 동의합니다</label>
+    <button type="submit" class="btn">사전예약 신청</button>
+    <p class="form-msg" id="formMsg"></p>
+  </form>
+</section>
+
+  <!-- ========== 하단 ========== -->
+  <footer class="footer">
+    <div class="stripe"></div>
+    <p>[팀 이름 / 팀원]</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
