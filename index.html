@@ -16,6 +16,7 @@
       <a href="#news">소식</a>
       <a href="#characters">캐릭터</a>
       <a href="#world">세계관</a>
+      <a href="#gstar">지스타</a>
     </nav>
     <a href="#hero" class="nav-btn">사전예약</a>
   </header>
@@ -32,13 +33,21 @@
   <section class="hero" id="hero">
     <div class="hero-content">
       <img class="hero-logo" src="images/logo.png" alt="HEART TRIGGER 로고">
-      <p class="hero-catch">[캐치프레이즈]</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn">[버튼 1]</a>
-        <a href="#" class="btn btn-line">[버튼 2]</a>
-      </div>
-    </div>
-    <div class="stripe stripe-bottom"></div>
+      
+<p class="hero-catch">
+  미소녀를 공략하고 함께 악의 무리를 물리치자!
+</p>
+
+    
+<div class="hero-buttons">
+  <a href="#prereg" class="btn btn-primary">
+    사전등록
+  </a>
+  <a href="#" class="btn btn-secondary">
+    PC 다운로드
+  </a>
+</div>
+
   </section>
 
   <!-- ========== 2. 소식 ========== -->
@@ -58,10 +67,30 @@
           <button class="tab">이벤트</button>
         </div>
         <ul>
-          <li><span>[분류]</span> [소식 제목] <em>[날짜]</em></li>
-          <li><span>[분류]</span> [소식 제목] <em>[날짜]</em></li>
-          <li><span>[분류]</span> [소식 제목] <em>[날짜]</em></li>
-          <li><span>[분류]</span> [소식 제목] <em>[날짜]</em></li>
+          
+<ul>
+  <li>
+    <span>[행사]</span>
+    HEART TRIGGER 지스타 참가 안내
+    <em>2026.11.19</em>
+  </li>
+  <li>
+    <span>[공지]</span>
+    HEART TRIGGER 공식 홈페이지 공개
+    <em>2026.11.18</em>
+  </li>
+  <li>
+    <span>[이벤트]</span>
+    사전예약 달성 보상 이벤트 안내
+    <em>추후 공개</em>
+  </li>
+  <li>
+    <span>[공지]</span>
+    HEART TRIGGER 캐릭터 소개 공개
+    <em>추후 공개</em>
+  </li>
+</ul>
+
         </ul>
       </div>
     </div>
@@ -73,12 +102,16 @@
     <div class="char-wrap">
       <!-- 왼쪽: 캐릭터 선택 버튼 (data-char 번호로 연결) -->
       <div class="char-list">
-        <button class="char-btn is-active" data-char="0">[캐릭터 1]</button>
-        <button class="char-btn" data-char="1">[캐릭터 2]</button>
-        <button class="char-btn" data-char="2">[캐릭터 3]</button>
+        
+<button class="char-btn is-active" data-char="0">서이현</button>
+<button class="char-btn" data-char="1">류호연</button>
+<button class="char-btn" data-char="2">정유나</button>
+
       </div>
       <!-- 가운데: 캐릭터 그림 -->
-      <div class="char-art"><p>[캐릭터 일러스트 자리]</p></div>
+      <div class="char-art">
+  <img class="char-img" src="images/char-seo.png" alt="서이현">
+</div>
       <!-- 오른쪽: 캐릭터 정보 -->
       <div class="char-info">
         <h3 class="char-name">[이름]</h3>
@@ -102,6 +135,51 @@
   <h2 class="title">사전예약</h2>
   <p class="prereg-date">출시 예정일 <strong>[출시일]</strong></p>
 
+<div class="milestone">
+  <h2>사전예약 달성 보상</h2>
+  <p>예약자 수에 따라 특별한 보상이 개방됩니다!</p>
+
+  <div class="milestone-list">
+    <div class="milestone-item">
+      <div class="milestone-icon">💎</div>
+      <strong>10,000명</strong>
+      <span>성장 재화</span>
+    </div>
+
+    <div class="milestone-item">
+      <div class="milestone-icon">🎁</div>
+      <strong>20,000명</strong>
+      <span>호감도 선물</span>
+    </div>
+
+    <div class="milestone-item">
+      <div class="milestone-icon">💗</div>
+      <strong>30,000명</strong>
+      <span>한정 프로필</span>
+    </div>
+
+    <div class="milestone-item">
+      <div class="milestone-icon">👗</div>
+      <strong>40,000명</strong>
+      <span>한정 코스튬</span>
+    </div>
+
+    <div class="milestone-item">
+      <div class="milestone-icon">⭐</div>
+      <strong>50,000명</strong>
+      <span>특별 보상</span>
+    </div>
+  </div>
+
+  <div class="milestone-progress">
+    <div class="milestone-fill" id="milestoneFill"></div>
+  </div>
+
+  <p class="milestone-count" id="milestoneCount">
+    현재 0명 / 목표 50,000명
+  </p>
+</div>
+
   <div class="rewards">
     <div class="reward reward-main">
       <span class="sticker">추첨</span>
@@ -119,6 +197,65 @@
     <button type="submit" class="btn">사전예약 신청</button>
     <p class="form-msg" id="formMsg"></p>
   </form>
+</section>
+
+<!-- ===== 6. 지스타 홍보 ===== -->
+<section class="gstar" id="gstar">
+
+  <div class="gstar-inner">
+
+    <p class="gstar-label">SPECIAL EVENT 2026</p>
+
+    <h2 class="gstar-title">
+      HEART TRIGGER<br>
+      <span>G-STAR 2026</span>
+    </h2>
+
+    <p class="gstar-subtitle">
+      지스타에서 HEART TRIGGER를 만나보세요!
+    </p>
+
+    <div class="gstar-content">
+
+      <!-- 왼쪽: 행사 홍보 이미지 -->
+      <div class="gstar-visual">
+        <img src="images/gstar-banner.png"
+             alt="HEART TRIGGER 지스타 홍보 이미지">
+      </div>
+
+      <!-- 오른쪽: 행사 정보 -->
+      <div class="gstar-info">
+
+        <h3>G-STAR 2026</h3>
+
+        <p>
+          <strong>행사 일정</strong><br>
+          2026.11.19 ~ 11.22
+        </p>
+
+        <p>
+          <strong>행사 장소</strong><br>
+          부산 BEXCO
+        </p>
+
+        <p>
+          <strong>부스 위치</strong><br>
+          추후 공개
+        </p>
+
+        <a href="https://www.gstar.or.kr/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn gstar-btn">
+          지스타 공식 홈페이지
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
   <!-- ========== 하단 ========== -->
